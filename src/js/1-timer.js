@@ -48,9 +48,9 @@ function startTimer(targetDate) {
     const difference = targetDate - currentTime;
 
     if (difference < 0) {
-      clearInterval(countdownInterval);
       elements.startButton.disabled = false;
       elements.datetimePicker.disabled = false;
+      clearInterval(countdownInterval);
       return;
     }
 
