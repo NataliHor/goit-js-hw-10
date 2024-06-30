@@ -50,6 +50,7 @@ function startTimer(targetDate) {
     if (difference < 0) {
       clearInterval(countdownInterval);
       elements.startButton.disabled = false;
+      elements.datetimePicker.disabled = false;
       return;
     }
 
